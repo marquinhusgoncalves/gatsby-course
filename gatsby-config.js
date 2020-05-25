@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `My blog`,
-    description: `Blog og the development.`,
+    title: `Marquinhus Gonçalves`,
+    position: `Engenheiro de software`,
+    description: `Acha que cria boa soluções para problemas reais.`,
     author: `@gmarquinhusgonc`,
   },
   plugins: [
