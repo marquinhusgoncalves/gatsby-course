@@ -11,8 +11,8 @@ const BlogList = props => {
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPages = currentPage - 1 === 1 ? "/" : `/page/${currentPage - 1}`
-  const nextPages = `/page/${currentPage + 1}`
+  const prevPage = currentPage - 1 === 1 ? "/" : `/page/${currentPage - 1}`
+  const nextPage = `/page/${currentPage + 1}`
 
   return (
     <Layout>
@@ -40,9 +40,9 @@ const BlogList = props => {
         isFirst={isFirst}
         isLast={isLast}
         currentPage={currentPage}
-        nummPages={numPages}
-        prevPages={prevPages}
-        nextPages={nextPages}
+        numPages={numPages}
+        prevPage={prevPage}
+        nextPage={nextPage}
       />
     </Layout>
   )
