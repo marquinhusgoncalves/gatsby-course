@@ -9,6 +9,8 @@ import { ThList as List } from "@styled-icons/typicons/ThList"
 
 import * as S from "./styled"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
@@ -26,12 +28,26 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="Voltar para Home">
+        <S.MenuBarLink
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/"
+          title="Voltar para Home"
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search/" title="Pesquisar">
+        <S.MenuBarLink
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/search/"
+          title="Pesquisar"
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
