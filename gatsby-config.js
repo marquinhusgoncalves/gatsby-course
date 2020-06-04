@@ -8,6 +8,7 @@ module.exports = {
     position: `Engenheiro de software`,
     description: `Acha que cria boa soluções para problemas reais.`,
     author: `@gmarquinhusgonc`,
+    siteUrl: `https://gatsby-course.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -73,17 +74,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `gatsby-course`,
+        short_name: `gatsby-course`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
