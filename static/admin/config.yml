@@ -2,7 +2,7 @@ backend:
   name: github
   repo: marquinhusgoncalves/gatsby-course
   branch: master
-  site_domain: https://gatsby-marquinhus.netlify.app/
+  site_domain: gatsby-marquinhus.netlify.app/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
