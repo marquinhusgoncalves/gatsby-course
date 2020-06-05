@@ -8,7 +8,7 @@ module.exports = {
     position: `Engenheiro de software`,
     description: `Acha que cria boa soluções para problemas reais.`,
     author: `@gmarquinhusgonc`,
-    siteUrl: `https://gatsby-course.com.br`,
+    siteUrl: `https://gatsby-marquinhus.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
